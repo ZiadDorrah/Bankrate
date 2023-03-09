@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/all.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container mt-5 main_form">
+      <div class="mb-3">
+        <label for="Home_price" class="form-label">Home price </label>
+        <input type="text" class="form-control" id="Home_price" />
+      </div>
+      <div class="mb-3">
+        <label for="Precentage" class="form-label">Precentage </label>
+        <input type="text" class="form-control" id="Precentage" />
+      </div>
+      <div class="mb-3">
+        <label for="Down_payment" class="form-label">Down payment </label>
+        <input type="text" class="form-control" id="Down_payment" />
+      </div>
+      <div class="mb-3">
+        <label for="Loan_term" class="form-label">Loan term </label>
+        <input type="text" class="form-control" id="Loan_term" />
+      </div>
+      <div class="mb-3">
+        <label for="Interest_rate" class="form-label">Interest rate </label>
+        <input type="text" class="form-control" id="Interest_rate" />
+      </div>
+      <div class="mb-3">
+        <label for="initial_date" class="form-label">Initial Date </label>
+        <input type="date" class="form-control" id="initial_date" />
+      </div>
+      <button class="btn btn-primary" id="calculate">Calculate</button>
+    </div>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Months</th>
+            <th scope="col">Date:</th>
+            <th scope="col">Beginning Balance:</th>
+            <th scope="col">Payment:</th>
+            <th scope="col">Interest:</th>
+            <th scope="col">Principal:</th>
+            <th scope="col">Ending Balance:</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script> -->
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/all.min.js"></script>
+    <script src="resources/js/main.js"></script>
+  </body>
+</html>
